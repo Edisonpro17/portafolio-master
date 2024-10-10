@@ -1,0 +1,98 @@
+/*comenzamos por editar parte del tamaño de fuente del html*/
+html {
+    font-size: 16px;
+}
+
+/*Voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
+@media screen and(wax-width:400px) {
+    html {
+        font-size: 9.4117444444444444px;
+    }
+}
+
+/*Altura*/
+html,
+body {
+    height: 100%;
+}
+
+/*Editamos el cuerpo con el tipo de letra y fondo, el comando font-family es 
+importante usar el mismo nombre que aparece en el codigo de Google font*/
+body {
+    background: #47472a;
+    font-family: "Edu AU VIC WA NT Dots";
+    /*El numero que utilicemos dentro del comanto font-size es multiplicado 
+    por la letra padre "16px" siempre y cuando utilicemos rem al final del numero escrito*/
+    font-size: 1.7rem;
+    font-size: normal;
+    /*En base a la linea que copiamos y pegamos en "base.css" proveniente 
+    de google fonts nosotros utilizaremos la medida dada.*/
+    font-weight: 700;
+    line-height: 1.882;
+    color: rgb(42, 65, 116);
+    /*Margin nos da un espacio desde el contenedor para afuera, margenes exteriores*/
+    margin: 0;
+    /*Padin es margenes interiores*/
+    padding: 0;
+}
+
+/*Estilos a los links*/
+a {
+    color: rgb(63, 255, 83);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #2d6ec4;
+}
+
+/*focus es brillo*/
+/*active lo activa xd*/
+/*funcion hover*/
+a:hover,
+a:active{
+    outline: 0;
+}
+/*tipografia*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4 {
+    margin-top: 6rem;
+    margin-bottom: 16rem;
+
+}
+/*Aplicar diferentes estilos a distintos tipos de medios o dispositivos*/
+@media screen and (max-width:600px) {
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4 {margin-top: 6rem;
+    }
+}
