@@ -19,7 +19,7 @@ body {
 /*Editamos el cuerpo con el tipo de letra y fondo, el comando font-family es 
 importante usar el mismo nombre que aparece en el codigo de Google font*/
 body {
-    background: #47472a;
+    background: #000000;
     font-family: "Edu AU VIC WA NT Dots";
     /*El numero que utilicemos dentro del comanto font-size es multiplicado 
     por la letra padre "16px" siempre y cuando utilicemos rem al final del numero escrito*/
@@ -52,9 +52,10 @@ a:active {
 /*active lo activa xd*/
 /*funcion hover*/
 a:hover,
-a:active{
+a:active {
     outline: 0;
 }
+
 /*tipografia*/
 h1,
 h2,
@@ -85,14 +86,76 @@ h4 {
     margin-bottom: 16rem;
 
 }
+
 /*Aplicar diferentes estilos a distintos tipos de medios o dispositivos*/
 @media screen and (max-width:600px) {
+
     h1,
     .h1,
     h2,
     .h2,
     h3,
     .h3,
-    h4 {margin-top: 6rem;
+    h4 {
+        margin-top: 6rem;
     }
+}
+
+/*Estilos del header*/
+.s-header {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    border: solid white;
+    height: 78px;
+    text-align: center;
+}
+
+.s-header.sticky {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.header-logo {
+    display: inline-block;
+    margin: 6px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+
+.header-logo a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all.3s;
+}
+
+.header-logo img {
+    width: 132px;
+    height: 36px;
+    margin: 0;
+}
+.header-nav-wrap{
+    display: inline-block;
+}
+.header-nav-wrap ul{
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 18px;
+}
+.header-nav-wrap li{
+    display: inline-block;
+    padding-left: 0;
+}
+.header-nav-wrap li a{
+    display: block;
+    line-height: calc(78px -(18*2));
 }
